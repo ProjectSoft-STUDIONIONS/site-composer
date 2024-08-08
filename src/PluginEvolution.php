@@ -178,7 +178,7 @@ class PluginEvolution {
 					switch ($ext) {
 						case 'pdf':
 							// Set headers 302 Moved Temporarily
-							header('HTTP/1.1 302 Moved Temporarily');
+							header('HTTP/1.1 503 Service Temporarily Unavailable');
 							// return view pdf
 							$mpdf->Output();
 							die();
