@@ -1,0 +1,9 @@
+* text=auto
+
+/.github export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/README.md export-ignore
+/LICENSE export-ignore
+/site-composer.sublime-project export-ignore
+/site-composer.sublime-workspace export-ignore
