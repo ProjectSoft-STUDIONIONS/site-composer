@@ -137,9 +137,9 @@ class PluginEvolution {
 					 * Файлы printpage_header.html и printpage_footer.html должны лежать в директории шаблона. Путь до директории assets/templates/projectsoft/tpl/ не изменять. Он должен существовать обязательно.
 					**/
 					// Header
-					$header = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') : "");
+					$header = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') : dirname(__FILE__) . "/printpage_header.html");
 					// Footer
-					$footer = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') : "");
+					$footer = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') : dirname(__FILE__) . "/printpage_footer.html");
 					// Body
 					$html = "@CODE: <h1 class='text-center'>Файл<br>\"" . $url . "\"<br>по вашему запросу не найден</h1><h2 class='text-center'>Приносим свои извенения.</h2><p class='text-center'>Дата и время запроса: " . $date . "</p>";
 					// Parse header

@@ -97,7 +97,7 @@ class SendBot {
 
 	public function send(){
 		$url = $this->url;
-		file_put_contents('0002-result.txt', print_r($url, true));
+		//file_put_contents('0002-result.txt', print_r($url, true));
 		$ch = curl_init();
 		$optArray = array(
 				CURLOPT_URL => $url,
