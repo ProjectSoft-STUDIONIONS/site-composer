@@ -1,0 +1,120 @@
+body,
+html {
+	margin: 0;
+	background: white;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.print_page table {
+	min-width: 100% !important;
+	width: 100%;
+	border-collapse: collapse;
+}
+.print_page table,
+.print_page table td,
+.print_page table th {
+	border: 1px solid #ccc;
+}
+.print_page table td,
+.print_page table th {
+	padding: 0.4em;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+.container,
+.container-fluid {
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-sm-6 {
+	display: block;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	width: 45%;
+}
+img {
+	max-width: 100%;
+}
+h1,
+.h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+.h2,
+h2 {
+	font-size: 1.5em;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+}
+.h3,
+h3 {
+	font-size: 1.17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+	font-size: 1.13em;
+	margin-top: 1.33em;
+	margin-bottom: 1.33em;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+dl dt {
+	font-weight: bold;
+}
+header.pageprint {
+	border-bottom: 1px solid #ccc;
+}
+header.pageprint .link,
+header.pageprint .sitename {
+	display: inline-block;
+}
+header.pageprint .link {
+	width: 7%;
+	float: left;
+}
+header.pageprint .sitename {
+	width: 80%;
+	float: right;
+	font-style: italic;
+}
+footer.pageprint {
+	border-top: 1px solid #ccc;
+}
+footer .pageprint--table {
+	width: 100%;
+	border: 0px;
+}
+footer .pageprint--table .col--left {
+	width: 20%;
+}
+footer .pageprint--table .col--center {
+	width: 60%;
+	text-align: center;
+}
+footer .pageprint--table .col--right {
+	width: 20%;
+	text-align: right;
+}

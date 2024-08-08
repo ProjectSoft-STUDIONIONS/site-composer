@@ -1,0 +1,43 @@
+{
+	"name": "projectsoft/evolution",
+	"description": "Composer для сайта на Evolution CMS v1.4.x",
+	"keywords": [],
+	"homepage": "https://github.com/ProjectSoft-STUDIONIONS/site-composer",
+	"type": "library",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "ProjectSoft",
+			"email": "projectsoft2009@yandex.ru",
+			"homepage": "https://github.com/ProjectSoft-STUDIONIONS"
+		}
+	],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/PHPMailer/PHPMailer"
+		}
+	],
+	"require": {
+		"php": ">=7.1",
+		"phpoffice/phpspreadsheet": ">=1.9",
+		"mpdf/mpdf": ">=7.0.0",
+		"ps/image-optimizer": ">=2.0",
+		"phpmailer/phpmailer": "dev-master",
+		"ralouphie/mimey": "^2.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"ProjectSoft\\": "/src"
+		}
+	},
+	"archive": {
+		"exclude": [
+			"/README.md",
+			"/LICENSE",
+			"/*.sublime-project"
+		]
+	}
+}
