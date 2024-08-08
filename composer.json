@@ -20,6 +20,11 @@
 			"url": "https://github.com/PHPMailer/PHPMailer"
 		}
 	],
+	"scripts": {
+		"post-install-cmd": [
+			"echo INSTALL projectsoft/evolution"
+		]
+	},
 	"require": {
 		"php": ">=7.1",
 		"phpoffice/phpspreadsheet": ">=1.9",
