@@ -131,7 +131,7 @@ class PluginEvolution {
 					$modx->tpl = \DLTemplate::getInstance($modx);
 					$css = is_file(dirname(__FILE__) . "/print.css") ? file_get_contents(dirname(__FILE__) . "/print.css") : "";
 					$filename = pathinfo($tmp_url, PATHINFO_BASENAME);
-					$fileinfo = pathinfo($tmp_url);
+					$fileinfo = pathinfo($tmp_url, PATHINFO_BASENAME);
 					file_put_contents(dirname(__FILE__) . "/fileinfo.txt", print_r($fileinfo, true));
 					/**
 					 * $header
