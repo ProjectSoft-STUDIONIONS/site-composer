@@ -131,8 +131,6 @@ class PluginEvolution {
 					$modx->tpl = \DLTemplate::getInstance($modx);
 					$css = is_file(dirname(__FILE__) . "/print.css") ? file_get_contents(dirname(__FILE__) . "/print.css") : "";
 					$filename = pathinfo($tmp_url, PATHINFO_BASENAME);
-					$fileinfo = pathinfo($tmp_url, PATHINFO_BASENAME);
-					file_put_contents(dirname(__FILE__) . "/fileinfo.txt", print_r($fileinfo, true));
 					/**
 					 * $header
 					 * $footer
@@ -183,7 +181,7 @@ class PluginEvolution {
 							//header('HTTP/1.1 302 Moved Temporarily');
 							header('HTTP/1.1 503 Service Temporarily Unavailable');
 							// return view pdf
-							$mpdf->Output('404-not-found.pdf', \Mpdf\Output\Destination::INLINE);
+							$mpdf->Output($filename, \Mpdf\Output\Destination::INLINE);
 							die();
 							break;
 						default:
