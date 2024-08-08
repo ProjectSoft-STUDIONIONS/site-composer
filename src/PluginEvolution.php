@@ -115,7 +115,7 @@ class PluginEvolution {
 				case 'png':
 				case 'gif':
 				//case 'bmp':
-					$re = '@^.+((?:assets\/files|images).*$)@';
+					$re = '@^.+((?:assets\/files|images)?.*$)@';
 					//preg_match($re, $url, $matches);
 					if(preg_match($re, $url, $matches)){
 						//print_r($matches);
