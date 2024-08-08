@@ -181,7 +181,7 @@ class PluginEvolution {
 							//header('HTTP/1.1 302 Moved Temporarily');
 							header('HTTP/1.1 503 Service Temporarily Unavailable');
 							// return view pdf
-							$mpdf->Output();
+							$mpdf->Output('404-not-found.pdf', \Mpdf\Output\Destination::INLINE);
 							die();
 							break;
 						default:
