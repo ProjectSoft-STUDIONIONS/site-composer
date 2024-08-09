@@ -129,7 +129,7 @@ class PluginEvolution {
 					$lastModified = gmdate('D, d M Y H:i:s', $time) . ' GMT';
 					$mimes = new MimeTypes;
 					$modx->tpl = \DLTemplate::getInstance($modx);
-					$css = is_file(dirname(__FILE__) . "/print.css") ? file_get_contents(dirname(__FILE__) . "/print.css") : "";
+					$css = is_file(dirname(__FILE__) . "/assets/print.css") ? file_get_contents(dirname(__FILE__) . "/assets/print.css") : "";
 					$filename = pathinfo($tmp_url, PATHINFO_BASENAME);
 					/**
 					 * $header
@@ -137,9 +137,9 @@ class PluginEvolution {
 					 * Файлы printpage_header.html и printpage_footer.html должны лежать в директории шаблона. Путь до директории assets/templates/projectsoft/tpl/ не изменять. Он должен существовать обязательно.
 					**/
 					// Header
-					$header = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') : file_get_contents(dirname(__FILE__) . "/printpage_header.html"));
+					$header = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_header.html') : file_get_contents(dirname(__FILE__) . "/assets/printpage_header.html"));
 					// Footer
-					$footer = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') : file_get_contents(dirname(__FILE__) . "/printpage_footer.html"));
+					$footer = '@CODE: ' . (is_file(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') ? file_get_contents(MODX_BASE_PATH . 'assets/templates/projectsoft/tpl/printpage_footer.html') : file_get_contents(dirname(__FILE__) . "/assets/printpage_footer.html"));
 					// Body
 					$html = "@CODE: <h1 class='text-center'>Файл<br>\"" . $url . "\"<br>по вашему запросу не найден</h1><h2 class='text-center'>Приносим свои извенения.</h2><p class='text-center'>Дата и время запроса: " . $date . "</p>";
 					// Parse header
