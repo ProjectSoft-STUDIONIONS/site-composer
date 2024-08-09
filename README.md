@@ -1,1 +1,1 @@
-# site-composer
+# Composer для сайта на Evolution CMS v1.4.x
